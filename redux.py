@@ -32,7 +32,7 @@ def redux(data: list[str]) -> str:
     # Tags
     body.append("\n### Tags:\n")
     for tag in tags:
-        body.append(tag)
+        body.append("#" + tag[4:])
 
     return "".join(body)
 
